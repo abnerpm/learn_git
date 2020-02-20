@@ -1,1 +1,28 @@
-"""TÍTULO
+2.2 GIT BASICS
+
+    git status
+    git add
+    git status --short or -s
+    git diff
+    git diff --cached or --staged
+    git commit
+    git rm
+    git mv (change name of file directly)
+
+2.3 GIT HISTORY
+
+    git log
+    git log -p -<n> where n is the number of logs printed
+    git log --stat print with more informations
+    git log --pretty=oneline resume of logs in one line
+    git log --pretty=format:
+        %h -> hash
+        %an -> user
+        %ar -> elapsed time
+        %s  -> commit title
+    git log -S function_name filter by change of documents
+    git log --pretty="..." --author <name> [filter by author] --since=2.days [filter by date] 
+
+2.6 GIT TAGS
+
+    git tag --list -> lista tags
