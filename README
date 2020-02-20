@@ -20,9 +20,37 @@
         %an -> user
         %ar -> elapsed time
         %s  -> commit title
-    git log -S function_name filter by change of documents
-    git log --pretty="..." --author <name> [filter by author] --since=2.days [filter by date] 
+    git log -S function_name filter log by change of documents
+    git log --pretty="..." --author <name> [filter by author] --since=2.days [filter by date]
+
+2.4 UNDOING THINGS
+
+    git commit --amend return last commit message
+    git reset HEAD <file> return unstaged file
+    git checkout unmodifying a file
+
+2.5 WORK REMOTE
+
+    git clone
+    git remote show remote servers configured
+    git remote show -v show the links of servers configured
+    git remote add <name of server> <link of server>
+    git fetch <name of server> get all information of server
+    git remote show <name of server> inspect server
+    git remote rename <old name of server> <new name of server>
+    git remote remove <name of server>
+
+
 
 2.6 GIT TAGS
 
     git tag --list -> lista tags
+    git show <name of tag>
+    git tag -a <name of tag> -m <message>
+    git tag -a <name of tag> <checksum partial or full> tag after
+    git push <name of server> <name of tag> push tag to server. This isn't is default
+    git push <name of server> --tags push all tags to to server
+    git tag -d <name of tag> delete tag
+    git push <remote server> --delete <tag> remove tag from server
+    git checkout <tag> go to tag file
+    git checkout -b 
